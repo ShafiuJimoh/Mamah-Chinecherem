@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes by PG - Portfolio Detail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --teal: #20B2AA; --blue-green: #1E90FF; --pink: #FF69B4;
+            --gold: #FFD700; --dark: #0a1128; --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--dark), #1a1a2e);
+            color: var(--light); line-height: 1.6; padding: 2rem; min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header {
+            text-align: center; margin-bottom: 3rem; padding-bottom: 2rem;
+            border-bottom: 2px solid var(--teal);
+        }
+        .header h1 {
+            font-family: 'Playfair Display', serif; font-size: 3rem;
+            background: linear-gradient(135deg, var(--teal), var(--blue-green));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text; margin-bottom: 1rem;
+        }
+        .header .subtitle { font-size: 1.2rem; color: var(--pink); }
+        .section {
+            margin-bottom: 3rem; background: rgba(255, 255, 255, 0.05);
+            padding: 2rem; border-radius: 20px; border: 2px solid rgba(32, 178, 170, 0.3);
+        }
+        .section h2 {
+            color: var(--teal); font-size: 2rem; margin-bottom: 1.5rem;
+            display: flex; align-items: center; gap: 1rem;
+        }
+        .section p { margin-bottom: 1rem; font-size: 1.1rem; opacity: 0.9; }
+        .section ul { list-style: none; padding-left: 0; }
+        .section li {
+            margin-bottom: 1rem; padding-left: 2rem; position: relative;
+        }
+        .section li:before {
+            content: '✓'; position: absolute; left: 0; color: var(--teal);
+            font-weight: bold; font-size: 1.2rem;
+        }
+        .gallery {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem; margin-top: 2rem;
+        }
+        .gallery-item {
+            position: relative; overflow: hidden; border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover { transform: scale(1.05); }
+        .gallery-item img {
+            width: 100%; height: 300px; object-fit: cover;
+            border-radius: 15px; border: 2px solid var(--teal);
+        }
+        .metrics {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem; margin: 2rem 0;
+        }
+        .metric-card {
+            text-align: center; padding: 2rem; background: rgba(255, 105, 180, 0.1);
+            border-radius: 15px; border: 2px solid rgba(255, 105, 180, 0.3);
+        }
+        .metric-value {
+            font-size: 3rem; font-weight: 700;
+            background: linear-gradient(135deg, var(--pink), var(--gold));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .metric-label { font-size: 1rem; margin-top: 0.5rem; opacity: 0.9; }
+        .cta-button {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 1rem 2rem; background: linear-gradient(135deg, var(--teal), var(--blue-green));
+            color: white; text-decoration: none; border-radius: 50px;
+            font-weight: 600; transition: all 0.3s; margin-top: 1rem;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px); box-shadow: 0 10px 30px rgba(32, 178, 170, 0.5);
+        }
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2rem; }
+            .gallery { grid-template-columns: 1fr; }
+            body { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Boxes by PG</h1>
+            <p class="subtitle">Luxury Packaging Brand</p>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-info-circle"></i> Project Overview</h2>
+            <p>Boxes by PG is a luxury packaging brand specializing in premium gift boxes, custom packaging solutions, and elegant presentation materials. As the Content Creator & Social Media Manager, I developed and executed a comprehensive social media strategy that positioned the brand as a go-to choice for luxury packaging in Lagos.</p>
+            <p>My role encompassed all aspects of social media management, from photography and graphic design to content strategy and community engagement, resulting in consistent growth and strong brand recognition.</p>
+        </div>
+
+        <div class="metrics">
+            <div class="metric-card">
+                <div class="metric-value">60+</div>
+                <div class="metric-label">Posts Published</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">268+</div>
+                <div class="metric-label">Engaged Followers</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">138K+</div>
+                <div class="metric-label">Total Views</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-tasks"></i> Role & Responsibilities</h2>
+            <ul>
+                <li>Developed and managed monthly content calendars across social platforms</li>
+                <li>Created all visual content including product photography and styled shots</li>
+                <li>Designed promotional graphics and marketing materials using Canva</li>
+                <li>Managed day-to-day social media operations and posting schedules</li>
+                <li>Engaged with followers and responded to inquiries and DMs</li>
+                <li>Analyzed engagement metrics to optimize content performance</li>
+                <li>Collaborated with the team on product launches and seasonal campaigns</li>
+                <li>Maintained consistent brand aesthetics across all digital touchpoints</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-trophy"></i> Key Achievements</h2>
+            <ul>
+                <li>Successfully published 60+ high-quality posts maintaining brand consistency</li>
+                <li>Grew follower base to 268+ engaged followers interested in luxury packaging</li>
+                <li>Generated 138K+ total views showcasing product offerings</li>
+                <li>Created cohesive Instagram feed with recognizable brand aesthetics</li>
+                <li>Designed and executed seasonal campaigns driving customer inquiries</li>
+                <li>Increased brand awareness in Lagos luxury gift market</li>
+                <li>Developed reusable content templates for consistent posting</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-images"></i> Social Media Showcase</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80" alt="Luxury packaging">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&q=80" alt="Gift boxes">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=600&q=80" alt="Product display">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1606103836293-0a063a6c2a1a?w=600&q=80" alt="Custom packaging">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=600&q=80" alt="Styled products">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600&q=80" alt="Brand showcase">
+                </div>
+            </div>
+        </div>
+
+        <div class="section" style="text-align: center;">
+            <h2><i class="fas fa-link"></i> View Live</h2>
+            <a href="https://www.instagram.com/boxes_by_pg" target="_blank" class="cta-button">
+                <i class="fab fa-instagram"></i> Visit Boxes by PG on Instagram
+            </a>
+        </div>
+    </div>
+</body>
+</html>
