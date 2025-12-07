@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Embed Codes - Chinecherem Mamah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a1128, #1a1a2e);
+            color: #f8f9fa;
+            padding: 3rem 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #20B2AA, #1E90FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .embed-section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(32, 178, 170, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .embed-section h2 {
+            color: #20B2AA;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .embed-section p {
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .code-block {
+            background: #000;
+            border: 2px solid #20B2AA;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+            position: relative;
+        }
+
+        .code-block code {
+            color: #20B2AA;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            display: block;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #20B2AA;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .copy-btn:hover {
+            background: #1E90FF;
+            transform: translateY(-2px);
+        }
+
+        .copy-btn.copied {
+            background: #4CAF50;
+        }
+
+        .preview-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, #FF69B4, #FFD700);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .preview-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.5);
+        }
+
+        .note {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid #FFD700;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .note strong {
+            color: #FFD700;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .code-block {
+                font-size: 0.8rem;
+            }
+
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Portfolio Project Embed Codes</h1>
+        <p class="intro">Use these embed codes to display portfolio project details on any website. Each code creates a responsive iframe showcasing the full project details.</p>
+
+        <!-- The People's Economy -->
+        <div class="embed-section">
+            <h2><i class="fas fa-chart-line"></i> The People's Economy</h2>
+            <p>Finance & Policy Analysis Platform - Complete project showcase with metrics, responsibilities, and social media gallery.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this, 'tpe-code')"><i class="fas fa-copy"></i> Copy</button>
+                <code id="tpe-code">&lt;!-- The People's Economy Portfolio Embed --&gt;
+&lt;iframe 
+    src="https://YOUR-DOMAIN.com/tpe-detail.html" 
+    width="100%" 
+    height="800" 
+    frameborder="0" 
+    style="border: 2px solid #20B2AA; border-radius: 15px; max-width: 1200px; display: block; margin: 2rem auto;"
+    title="The People's Economy Portfolio"&gt;
+&lt;/iframe&gt;</code>
+            </div>
+            <a href="tpe-detail.html" target="_blank" class="preview-link">
+                <i class="fas fa-external-link-alt"></i> Preview Page
+            </a>
+        </div>
+
+        <!-- Boxes by PG -->
+        <div class="embed-section">
+            <h2><i class="fas fa-box"></i> Boxes by PG</h2>
+            <p>Luxury Packaging Brand - Comprehensive social media management showcase with visual gallery.</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this, 'boxes-code')"><i class="fas fa-copy"></i> Copy</button>
+                <code id="boxes-code">&lt;!-- Boxes by PG Portfolio Embed --&gt;
+&lt;iframe 
+    src="https://YOUR-DOMAIN.com/boxes-detail.html" 
+    width="100%" 
+    height="800" 
+    frameborder="0" 
+    style="border: 2px solid #20B2AA; border-radius: 15px; max-width: 1200px; display: block; margin: 2rem auto;"
+    title="Boxes by PG Portfolio"&gt;
+&lt;/iframe&gt;</code>
+            </div>
+            <a href="boxes-detail.html" target="_blank" class="preview-link">
+                <i class="fas fa-external-link-alt"></i> Preview Page
+            </a>
+        </div>
+
+        <!-- Responsive Embed Code -->
+        <div class="embed-section">
+            <h2><i class="fas fa-mobile-alt"></i> Responsive Embed (All Devices)</h2>
+            <p>Use this code for a fully responsive embed that adapts to any screen size:</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this, 'responsive-code')"><i class="fas fa-copy"></i> Copy</button>
+                <code id="responsive-code">&lt;!-- Responsive Portfolio Embed --&gt;
+&lt;div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 1200px; margin: 2rem auto;"&gt;
+    &lt;iframe 
+        src="https://YOUR-DOMAIN.com/tpe-detail.html" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 2px solid #20B2AA; border-radius: 15px;"
+        frameborder="0"
+        title="Portfolio Project"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;</code>
+            </div>
+            <div class="note">
+                <strong>Note:</strong> Replace "tpe-detail.html" with any portfolio detail page (tpe-detail.html, boxes-detail.html, etc.)
+            </div>
+        </div>
+
+        <!-- WordPress Shortcode Style -->
+        <div class="embed-section">
+            <h2><i class="fab fa-wordpress"></i> WordPress Compatible</h2>
+            <p>For WordPress sites, use the HTML block or Custom HTML widget:</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this, 'wp-code')"><i class="fas fa-copy"></i> Copy</button>
+                <code id="wp-code">&lt;!-- WordPress HTML Block --&gt;
+&lt;div class="portfolio-embed-container"&gt;
+    &lt;iframe 
+        src="https://YOUR-DOMAIN.com/tpe-detail.html" 
+        width="100%" 
+        height="800" 
+        frameborder="0" 
+        loading="lazy"
+        style="border: 2px solid #20B2AA; border-radius: 15px;"
+        title="Portfolio Project"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;</code>
+            </div>
+        </div>
+
+        <!-- JavaScript Dynamic Embed -->
+        <div class="embed-section">
+            <h2><i class="fab fa-js"></i> Dynamic JavaScript Embed</h2>
+            <p>Use this JavaScript code to dynamically embed portfolios with a simple button click:</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this, 'js-code')"><i class="fas fa-copy"></i> Copy</button>
+                <code id="js-code">&lt;!-- HTML Button --&gt;
+&lt;button onclick="loadPortfolio('tpe-detail.html')"&gt;View The People's Economy&lt;/button&gt;
+&lt;div id="portfolio-container"&gt;&lt;/div&gt;
+
+&lt;!-- JavaScript --&gt;
+&lt;script&gt;
+function loadPortfolio(pageUrl) {
+    const container = document.getElementById('portfolio-container');
+    container.innerHTML = `
+        &lt;iframe 
+            src="https://YOUR-DOMAIN.com/${pageUrl}" 
+            width="100%" 
+            height="800" 
+            frameborder="0" 
+            style="border: 2px solid #20B2AA; border-radius: 15px; max-width: 1200px; display: block; margin: 2rem auto;"
+            title="Portfolio Project"&gt;
+        &lt;/iframe&gt;
+    `;
+}
+&lt;/script&gt;</code>
+            </div>
+        </div>
+
+        <!-- Modal Popup Style -->
+        <div class="embed-section">
+            <h2><i class="fas fa-window-maximize"></i> Modal/Popup Style Embed</h2>
+            <p>Open portfolio details in a modal overlay for a modern user experience:</p>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this, 'modal-code')"><i class="fas fa-copy"></i> Copy</button>
+                <code id="modal-code">&lt;!-- Modal HTML --&gt;
+&lt;button onclick="openPortfolioModal('tpe-detail.html')"&gt;View Project&lt;/button&gt;
+
+&lt;div id="portfolioModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; padding:2rem;"&gt;
+    &lt;button onclick="closePortfolioModal()" style="position:absolute; top:2rem; right:2rem; background:#20B2AA; color:white; border:none; padding:0.5rem 1rem; border-radius:5px; cursor:pointer; font-size:1.5rem;"&gt;×&lt;/button&gt;
+    &lt;iframe id="modalIframe" width="100%" height="100%" frameborder="0" style="border-radius:15px;"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+function openPortfolioModal(pageUrl) {
+    document.getElementById('portfolioModal').style.display = 'block';
+    document.getElementById('modalIframe').src = 'https://YOUR-DOMAIN.com/' + pageUrl;
+}
+function closePortfolioModal() {
+    document.getElementById('portfolioModal').style.display = 'none';
+    document.getElementById('modalIframe').src = '';
+}
+&lt;/script&gt;</code>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Important:</strong> Replace "YOUR-DOMAIN.com" with your actual website domain where these HTML files are hosted. Make sure all detail HTML files (tpe-detail.html, boxes-detail.html, etc.) are uploaded to your web server.
+        </div>
+    </div>
+
+    <script>
+        function copyCode(button, codeId) {
+            const code = document.getElementById(codeId).textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const originalHTML = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                button.classList.add('copied');
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
